@@ -2,15 +2,13 @@
 int main()
 {
     int n;
-    char t;
     scanf("%d",&n);
-    int i,j;
-    for(i=n,t=(64+i);i>=1;--i,--t)
+    for(int i=n;i>=1;--i)
     {
-        for(j=1;j<=i;++j)
+        for(int j=n;j>=1;--j)
         {
-            printf("%c ",t);
-        } 
+            printf("%d ",j);
+        }
         printf("
 ");
     }
